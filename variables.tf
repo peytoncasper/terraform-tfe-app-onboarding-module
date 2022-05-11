@@ -1,6 +1,6 @@
-variable "app_name" {}
 variable "team_name" {}
 variable "org_name" {}
+
 
 ///
 /// Azure Active Directory Input Variables
@@ -21,8 +21,8 @@ variable "ado_org_name" {
 }
 variable "ado_oauth_client_id" {
     type = string
+    default = ""
 }
-
 
 ///
 /// Github Input Variables
@@ -39,4 +39,5 @@ variable "github_org_name" {
 }
 variable "github_oauth_client_id" {
     type = string
+    default = ""
 }
