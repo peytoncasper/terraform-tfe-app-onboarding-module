@@ -1,9 +1,9 @@
+variable "app_name" {}
 variable "team_name" {}
 variable "org_name" {}
 
-
 ///
-/// Azure Active Directory Input Variables
+/// Azure DevOps Input Variables
 /// Setting use_ado to true requires all ado variables to be set
 ///
 
@@ -21,8 +21,8 @@ variable "ado_org_name" {
 }
 variable "ado_oauth_client_id" {
     type = string
-    default = ""
 }
+
 
 ///
 /// Github Input Variables
@@ -39,5 +39,4 @@ variable "github_org_name" {
 }
 variable "github_oauth_client_id" {
     type = string
-    default = ""
 }
